@@ -1,0 +1,15 @@
+Author: Nedim Tosyali
+iTunes Search API Testplan.
+
+1) Initial test is confirm data is returned during a valid search.
+2) Test different Parameter Key searches.
+3) Increase test coverage by adding multiple words and testing multiple Keys at the same time.  It helps to know a few of the results from the searches to match results.  
+It would be wise to use words all capitol case, also random cases in the words while using some symbols added in the words.  Even just searching via just symbols as the words.
+4) Inject spelling mistakes and changing the order of the combined Keys.
+
+Ultimately this test should use a cryptographic randomness to choose how many fields and how many Keys would be combined, and to select order of the combined keys to hit corner cases.  Some of the terms are definitely used less, what key input scheme will be sent can be adjusted accordingly with some knobs.
+We hit so many corner case bugs while running regression cycles on proven code this way when I worked for Intel.  Some of these were show stopper bugs that werehit after many months of continues integration regressions.
+
+--This file was written from Git Bash using vi.
+
+
